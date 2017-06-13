@@ -30,5 +30,5 @@ typedef struct dhcp {
     char server_host_name[DHCP_SNAME_LEN];
     char boot_file_name[DHCP_FILE_LEN];
     uint32_t magic_cookie;
-    u_int8_t options[0];
+    u_int8_t options[256];
 } dhcp_t;
